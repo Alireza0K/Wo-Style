@@ -223,6 +223,7 @@ section{
     justify-content: space-around;
     flex-wrap: nowrap;
     position: relative;
+    border-radius: 10px;
 }
 
 .boxBrith{
@@ -230,6 +231,7 @@ section{
     height: 100%;
     position: absolute;
     background-color: #2525257a;
+    border-radius: 10px;
 }
 
 .textBox{
@@ -252,4 +254,34 @@ section{
     padding: 10px 11px;
     border-radius: 6px;
     font-family: sans-serif;
+}
+
+.informationToClient{
+    display: flex;
+    gap: 20px;
+    width: 40%;
+    background-color: #feb530;
+    padding: 10px;
+    border-radius: 10px;
+    margin: -90px 355px;
+    position: absolute;
+    align-items: center;
+}
+
+.textInfoBox{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+.textInfoBox h1{
+    color: #ffffff;
+    line-height: 20px;
+}
+
+.informationToClient .textInfoBox .btn-success{
+    background-color: #252525;
+    color: #fff;
+    font-size: initial;
 }
