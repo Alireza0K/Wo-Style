@@ -115,7 +115,7 @@ table {
 body {
     font-family: sans-serif;
     line-height: 1;
-    background: #fcfcfc;
+    background: #ffffff;
 }
 
 a {
@@ -132,7 +132,7 @@ a:visited{
 }
 
 .main{
-    width: 85%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
