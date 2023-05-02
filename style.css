@@ -263,7 +263,9 @@ section{
     background-color: #feb530;
     padding: 10px;
     border-radius: 10px;
-    margin: -90px 355px;
+
+    top: 666px;
+    left: 443px;
     position: absolute;
     align-items: center;
 }
@@ -284,4 +286,29 @@ section{
     background-color: #252525;
     color: #fff;
     font-size: initial;
+}
+
+.trendView{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.trendView .topContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    line-height: 0px;
+}
+
+.topContent .title{
+    font-size: x-large;
+}
+.topContent .subTitle{
+    font-size: small;
 }
