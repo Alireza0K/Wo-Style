@@ -456,3 +456,24 @@ section{
 .trustBox .logoBox > img{
     width: 140px;
 }
+
+.trustBox .rightStar > img{
+    position: absolute;
+    width: 90px;
+    right: 193px;
+    top: 87px;
+}
+
+.trustBox .leftStar > img{
+    position: absolute;
+    width: 90px;
+    left: 150px;
+    bottom:30px;
+}
+
+.trustBox .randomStar > img{
+    position: absolute;
+    width: 90px;
+    left: 266px;
+    bottom: 219px;
+}
