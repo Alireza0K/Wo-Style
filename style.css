@@ -312,3 +312,59 @@ section{
 .topContent .subTitle{
     font-size: small;
 }
+
+.trendContent{
+    display: flex;
+    padding: 20px 0px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 0px 0px 100px 0px;
+}
+
+.trendBoxContent{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center !important;
+    align-content: space-around;
+}
+
+.imageBoxContentTrend{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.imageBoxContentTrend img{
+    width: 90%;
+    border-radius: 10px;
+}
+
+.trendBoxContentText{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: #feb530;
+    padding: 3px 20px;
+    border-radius: 10px;
+    margin: -55px 0px;
+}
+
+.trendBoxContentText .titleContent{
+    font-size: large;
+    line-height: 0px;
+    color: white;
+}
+
+.trendBoxContentText .textContent{
+    text-align: center;
+    line-height: initial;
+    color: white;
+    font-size: small;
+}
