@@ -407,9 +407,52 @@ section{
     'sec1 sec1 sec4 sec4'
     'sec5 sec6 sec4 sec4';
     gap: 40px;
-    max-height: 400px !important;
+    /* max-height: 400px !important; */
 }
 
 .newRelease .content > div > img{
     width: 100%;
+}
+
+.trustSection{
+    position: absolute;
+    left: 0px;
+}
+
+.trust{
+    position: relative;
+}
+
+.trust .trustBox{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 80px;
+    background-color: #252525;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.trustBox .title{
+    color: #ffffff;
+    font-size: xx-large;
+    text-align: center;
+    line-height: 50px;
+    width: 50%;
+    padding: 0px 0px 20px 0px;
+}
+
+.trustBox .logoBox{
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.trustBox .logoBox > img{
+    width: 140px;
 }
