@@ -368,3 +368,48 @@ section{
     color: white;
     font-size: small;
 }
+
+.newRelease{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.topNewReleaseTitle{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.topNewReleaseTitle .title{
+    width: 40%;
+    font-size: 60px;
+}
+
+.topNewReleaseTitle .text{
+    width: 30%;
+    line-height: 25px;
+    font-size: large;
+}
+
+.sec1 {grid-area: sec1;}
+.sec2 {grid-area: sec2;}
+.sec3 {grid-area: sec3;}
+.sec4 {grid-area: sec4;}
+.sec5 {grid-area: sec5;}
+.sec6 {grid-area: sec6;}
+
+.newRelease .content{
+    display: grid;
+    grid-template-areas: 
+    'sec1 sec1 sec2 sec3'
+    'sec1 sec1 sec4 sec4'
+    'sec1 sec1 sec4 sec4'
+    'sec5 sec6 sec4 sec4';
+    gap: 40px;
+    max-height: 400px !important;
+}
+
+.newRelease .content > div > img{
+    width: 100%;
+}
