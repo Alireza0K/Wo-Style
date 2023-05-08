@@ -490,6 +490,7 @@ section{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    background-color: #252525;
 }
 
 .footerSec .footerBoxes{
@@ -548,9 +549,49 @@ section{
 
 .footerBoxes2 .left{
     width: 100%;
-    
+    color: #fff;
+    display: flex;
 }
+
+.footerBoxes2 .left > h1{
+    color: #fff;
+    padding: 0px 10px;
+}
+.footerBoxes2 .left .icons{
+    color: #fff;
+    display: flex;
+    padding: 0px 0px;
+    align-items: center;
+    flex-direction: row;
+}
+
+.footerBoxes2 .left .icons img{
+    padding: 0px 5px;
+}
+
 .footerBoxes2 .right{
     width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-between;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
 
+.footerBoxes2 .right > h1{
+    color: #fff;
+    padding: 0px 0px;
+}
+.footerBoxes2 .right .icons{
+    color: #fff;
+    display: flex;
+    padding: 0px 10px;
+    align-items: center;
+    flex-direction: row;
+}
+
+.footerBoxes2 .right .icons img{
+    padding: 0px 5px;
 }
