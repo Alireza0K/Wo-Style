@@ -487,6 +487,10 @@ section{
 
 .footerSec{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: #252525;
 }
 
 .footerSec .footerBoxes{
@@ -500,10 +504,94 @@ section{
     flex-wrap: nowrap;
     align-content: stretch;
     justify-content: flex-start;
+    gap: 20px;
 }
 
 .footerSec .footerBoxes > div{
     width: 100%;
-    color: tomato;
-    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footerSec .footerBoxes > div > .title{
+    color: #fff;
+    font-size: larger;
+}
+
+.footerSec .footerBoxes > div > .des{
+    color: #fff;
+    font-size: medium;
+    line-height: 30px;
+    width: 226px;
+    margin: 0px 0px;
+    font-size: small;
+}
+
+.footerSec .footerBoxes > div > ul{
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+
+.footerSec .footerBoxes > div > ul > li{
+    color: #fff;
+    padding: 10px 0px;
+    display: block;
+    font-size: small;
+}
+
+.footerBoxes2{
+    display: flex;
+    flex-direction: row;
+}
+
+.footerBoxes2 .left{
+    width: 100%;
+    color: #fff;
+    display: flex;
+}
+
+.footerBoxes2 .left > h1{
+    color: #fff;
+    padding: 0px 10px;
+}
+.footerBoxes2 .left .icons{
+    color: #fff;
+    display: flex;
+    padding: 0px 0px;
+    align-items: center;
+    flex-direction: row;
+}
+
+.footerBoxes2 .left .icons img{
+    padding: 0px 5px;
+}
+
+.footerBoxes2 .right{
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-between;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+.footerBoxes2 .right > h1{
+    color: #fff;
+    padding: 0px 0px;
+}
+.footerBoxes2 .right .icons{
+    color: #fff;
+    display: flex;
+    padding: 0px 10px;
+    align-items: center;
+    flex-direction: row;
+}
+
+.footerBoxes2 .right .icons img{
+    padding: 0px 5px;
 }
