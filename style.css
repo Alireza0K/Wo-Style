@@ -1,0 +1,608 @@
+html,
+body,
+div,
+span,
+object,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+pre,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    color: #252525;
+}
+
+/*html5 display-role reset for older browsers*/
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote::after,
+q:before,
+q::after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*style starts*/
+body {
+    font-family: sans-serif;
+    line-height: 1;
+    background: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: #252525;
+}
+
+a:hover{
+    color: none;
+}
+
+a:visited{
+    color:none;
+}
+
+.main{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px auto;
+}
+
+header{
+    width: 100%;
+    height: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0px;
+}
+
+header > div{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+ul li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.leftSide{
+    width: 50%;
+}
+.rightSide{
+    width: 50%;
+    display: flex;
+    text-align: center;
+}
+.center{
+    width: 100%;
+
+}
+
+.rowSide{
+    padding: 0px 0px;
+}
+
+.mainMenu{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.sideMenu{
+    /* font-family: ; */
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+section{
+    margin: 15px 0px;
+    width: 100%;
+}
+
+.showBoxIntro{
+    width: 100%;
+    height: 750px;
+    display: flex;
+    align-content: stretch;
+    background-image: url(https://wallpapercave.com/wp/wp6130531.jpg);
+    background-position: inherit;
+    background-size: cover;
+    background-blend-mode: darken;
+    /* filter: brightness(0.8); */
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    position: relative;
+    border-radius: 10px;
+}
+
+.boxBrith{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #2525257a;
+    border-radius: 10px;
+}
+
+.textBox{
+    width: 50%;
+    position: relative;
+}
+
+.textBox > *{
+    font-size: 50px;
+    line-height: 4rem;
+    font-family: -webkit-body;
+    color: white;
+}
+
+.btn-success{
+    border: none;
+    background-color: #fff;
+    color: #252525;
+    font-size: 25px;
+    padding: 10px 11px;
+    border-radius: 6px;
+    font-family: sans-serif;
+}
+
+.informationToClient{
+    display: flex;
+    gap: 20px;
+    width: 40%;
+    background-color: #feb530;
+    padding: 10px;
+    border-radius: 10px;
+
+    top: 666px;
+    left: 443px;
+    position: absolute;
+    align-items: center;
+}
+
+.textInfoBox{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+.textInfoBox h1{
+    color: #ffffff;
+    line-height: 20px;
+}
+
+.informationToClient .textInfoBox .btn-success{
+    background-color: #252525;
+    color: #fff;
+    font-size: initial;
+}
+
+.trendView{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.trendView .topContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    line-height: 0px;
+}
+
+.topContent .title{
+    font-size: x-large;
+}
+.topContent .subTitle{
+    font-size: small;
+}
+
+.trendContent{
+    display: flex;
+    padding: 20px 0px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 0px 0px 100px 0px;
+}
+
+.trendBoxContent{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center !important;
+    align-content: space-around;
+}
+
+.imageBoxContentTrend{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.imageBoxContentTrend img{
+    width: 90%;
+    border-radius: 10px;
+}
+
+.trendBoxContentText{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: #feb530;
+    padding: 3px 20px;
+    border-radius: 10px;
+    margin: -55px 0px;
+}
+
+.trendBoxContentText .titleContent{
+    font-size: large;
+    line-height: 0px;
+    color: white;
+}
+
+.trendBoxContentText .textContent{
+    text-align: center;
+    line-height: initial;
+    color: white;
+    font-size: small;
+}
+
+.newRelease{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.topNewReleaseTitle{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.topNewReleaseTitle .title{
+    width: 40%;
+    font-size: 60px;
+}
+
+.topNewReleaseTitle .text{
+    width: 30%;
+    line-height: 25px;
+    font-size: large;
+}
+
+.sec1 {grid-area: sec1;}
+.sec2 {grid-area: sec2;}
+.sec3 {grid-area: sec3;}
+.sec4 {grid-area: sec4;}
+.sec5 {grid-area: sec5;}
+.sec6 {grid-area: sec6;}
+
+.newRelease .content{
+    display: grid;
+    grid-template-areas: 
+    'sec1 sec1 sec2 sec3'
+    'sec1 sec1 sec4 sec4'
+    'sec1 sec1 sec4 sec4'
+    'sec5 sec6 sec4 sec4';
+    gap: 40px;
+    /* max-height: 400px !important; */
+}
+
+.newRelease .content > div > img{
+    width: 100%;
+}
+
+.trustSection{
+    position: absolute;
+    left: 0px;
+}
+
+.trust{
+    position: relative;
+}
+
+.trust .trustBox{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 80px;
+    background-color: #252525;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.trustBox .title{
+    color: #ffffff;
+    font-size: xx-large;
+    text-align: center;
+    line-height: 50px;
+    width: 50%;
+    padding: 0px 0px 20px 0px;
+}
+
+.trustBox .logoBox{
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.trustBox .logoBox > img{
+    width: 140px;
+}
+
+.trustBox .rightStar > img{
+    position: absolute;
+    width: 90px;
+    right: 193px;
+    top: 87px;
+}
+
+.trustBox .leftStar > img{
+    position: absolute;
+    width: 90px;
+    left: 150px;
+    bottom:30px;
+}
+
+.trustBox .randomStar > img{
+    position: absolute;
+    width: 90px;
+    left: 266px;
+    bottom: 219px;
+}
+
+#footer{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    padding: 341px 0px 0px 0px;
+}
+
+.footerSec{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: #252525;
+}
+
+.footerSec .footerBoxes{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 80px;
+    background-color: #252525;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.footerSec .footerBoxes > div{
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footerSec .footerBoxes > div > .title{
+    color: #fff;
+    font-size: larger;
+}
+
+.footerSec .footerBoxes > div > .des{
+    color: #fff;
+    font-size: medium;
+    line-height: 30px;
+    width: 226px;
+    margin: 0px 0px;
+    font-size: small;
+}
+
+.footerSec .footerBoxes > div > ul{
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+
+.footerSec .footerBoxes > div > ul > li{
+    color: #fff;
+    padding: 10px 0px;
+    display: block;
+    font-size: small;
+}
+
+.footerBoxes2{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0px;
+}
+
+.footerBoxes2 .left{
+    width: 100%;
+    color: #fff;
+    display: flex;
+}
+
+.footerBoxes2 .left > h1{
+    color: #fff;
+    padding: 0px 10px;
+}
+.footerBoxes2 .left .icons{
+    color: #fff;
+    display: flex;
+    padding: 0px 0px;
+    align-items: center;
+    flex-direction: row;
+}
+
+.footerBoxes2 .left .icons img{
+    padding: 0px 5px;
+}
+
+.footerBoxes2 .right{
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-between;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+.footerBoxes2 .right > h1{
+    color: #fff;
+    padding: 0px 0px;
+}
+.footerBoxes2 .right .icons{
+    color: #fff;
+    display: flex;
+    padding: 0px 10px;
+    align-items: center;
+    flex-direction: row;
+}
+
+.footerBoxes2 .right .icons img{
+    padding: 0px 5px;
+}
+
+.footerBoxes3{
+    background-color: #fff;
+}
+
+.footerBoxes3 > h1{
+    text-align: center;
+    color: #252525;
+    padding: 10px 0px;
+}
