@@ -477,3 +477,33 @@ section{
     left: 266px;
     bottom: 219px;
 }
+
+#footer{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    padding: 341px 0px 0px 0px;
+}
+
+.footerSec{
+    position: relative;
+}
+
+.footerSec .footerBoxes{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 80px;
+    background-color: #252525;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: flex-start;
+}
+
+.footerSec .footerBoxes > div{
+    width: 100%;
+    color: tomato;
+    text-align: center;
+}
